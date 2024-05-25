@@ -1,0 +1,114 @@
+body {
+  background-color: rgb(166, 185, 207);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.herotext {
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  font-family: "Abel", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+}
+
+#wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.61);
+  width: auto;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+#card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.hp {
+  padding-right: 10px;
+}
+
+#button button {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 30px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.image img {
+  width: 170px;
+  height: auto;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.stats {
+  padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .herotext {
+    font-size: 18px;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+  }
+
+  #wrapper {
+    padding: 10px;
+    top: 50%;
+    width: 90%;
+    max-width: 90%;
+  }
+
+  #card {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image img {
+    padding: 0;
+    width: 100%;
+    max-width: 170px;
+    margin-bottom: 15px;
+  }
+
+  .stats {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+
+  #button button {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+  }
+}
